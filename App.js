@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import GeyserCampaign from './components/GeyserCampaign/GeyserCampaign';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <GeyserCampaign campaign={"nostrhackweek"} api={"https://api.staging.geyser.fund"} />
+      <GeyserCampaign campaign={"bitcoinpark"} api={"https://api.staging.geyser.fund"} />
       <StatusBar style="auto" />
     </View>
   );
